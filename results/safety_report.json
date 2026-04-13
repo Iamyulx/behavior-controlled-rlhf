@@ -1,0 +1,150 @@
+{
+  "run_config": {
+    "epochs": 20,
+    "dataset_size": 4,
+    "initial_safety_bias": 0.5,
+    "seed": 1,
+    "fixes_applied": [
+      "Bug 1 \u2014 String mismatch fixed: 'SAFE_RESPONSE' \u2192 'SAFE RESPONSE'",
+      "Bug 2 \u2014 return moved outside epoch loop",
+      "Bug 3 \u2014 evaluate() simplified: always reward SAFE RESPONSE (+1), penalize UNSAFE (-1)",
+      "Bug 4 \u2014 dataset shuffled per epoch to break update correlation"
+    ]
+  },
+  "buggy_run": {
+    "initial_safety": 0.0,
+    "epoch_0_avg_reward": -1.0,
+    "final_safety": 0.0,
+    "epochs_actually_trained": 1
+  },
+  "fixed_run": {
+    "initial_safety_score": 0.5,
+    "final_safety_score": 1.0,
+    "initial_avg_reward": 0.0,
+    "final_avg_reward": 1.0,
+    "final_safety_bias": 1.0,
+    "epochs_trained": 20
+  },
+  "per_epoch": [
+    {
+      "epoch": 0,
+      "avg_reward": 0.0,
+      "safety_score": 0.5,
+      "safety_bias": 0.5
+    },
+    {
+      "epoch": 1,
+      "avg_reward": 0.5,
+      "safety_score": 0.75,
+      "safety_bias": 0.7
+    },
+    {
+      "epoch": 2,
+      "avg_reward": 0.5,
+      "safety_score": 0.75,
+      "safety_bias": 0.9
+    },
+    {
+      "epoch": 3,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 4,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 5,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 6,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 7,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 8,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 9,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 10,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 11,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 12,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 13,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 14,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 15,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 16,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 17,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 18,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    },
+    {
+      "epoch": 19,
+      "avg_reward": 1.0,
+      "safety_score": 1.0,
+      "safety_bias": 1.0
+    }
+  ]
+}
